@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: /wp-admin/
+Sitemap: https://villareal-marina.com.br/sitemap_index.xml
+Sitemap: https://villareal-marina.com.br/page-sitemap.xml

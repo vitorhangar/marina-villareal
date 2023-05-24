@@ -1,0 +1,29 @@
+.page-politica-de-privacidade{
+    background-color: #fff;
+
+    .breadcrumb{
+        margin: 8rem 0 0;
+
+        @media(max-width: $screen-md){
+            margin: 0;
+        }
+    }
+
+    .privacy-policy{
+        display: block;
+        width: 100%;
+        padding: 0 0 10rem;
+
+        @media(max-width: $screen-md){
+            padding: 0 0 5rem;
+        }
+    }
+
+    footer{
+        
+        .footer-bottom{
+            padding: 2.5rem 0 2.5rem;
+        }
+    }
+
+}

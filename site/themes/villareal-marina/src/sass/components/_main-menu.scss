@@ -1,0 +1,145 @@
+.main-menu {
+	font-size: 1.4rem;
+	z-index: 1000;
+
+	@media (min-width: $screen-lg) {
+		display: flex;
+	}
+
+	@media (max-width: $screen-lg - 1px) {
+		position: fixed;
+		background-color: #734e20ed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		padding: 3.5rem 2rem;
+		z-index: 5000;
+		transform: translateX(-100%);
+		transition: 300ms all;
+	}
+
+	a,
+	span {
+		display: block;
+		font-weight: 600;
+	}
+
+	&__name {
+	    font-family: Gilroy-extra-bold;
+		font-size: 14px;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		display: block;
+		padding: 1rem;
+		position: relative;
+		color: var(--white-color);
+
+		@media (min-width: $screen-lg) {
+			padding: 1.6rem 1.2rem 1.6rem 0;
+
+			&:hover {
+				color: var(--primary-color);
+			}
+		}
+	}
+
+	&__sub {
+		background-color: rgba(0, 0, 0, 0.8);
+
+		@media (min-width: $screen-lg) {
+			padding: 1rem;
+			position: absolute;
+			display: flex;
+			flex-wrap: wrap;
+			width: 400px;
+			visibility: hidden;
+			opacity: 0;
+			transition: 300ms all;
+
+			li {
+				width: calc(50% - 10px);
+				margin-bottom: 0.8rem;
+				border-bottom: 1px solid #4c4b4a;
+				&:nth-child(odd) {
+					margin-right: 10px;
+				}
+			}
+		}
+
+		a {
+			padding: 1rem;
+			@media (min-width: $screen-lg) {
+				padding: 0.5rem 1rem;
+				color: #fff;
+
+				&:hover {
+					color: var(--primary-color);
+				}
+			}
+		}
+
+		@media (max-width: $screen-lg - 1px) {
+			display: none;
+			li {
+				&:not(:last-child) {
+					border-bottom: 1px solid var(--link-color);
+				}
+			}
+		}
+	}
+
+	> li {
+		position: relative;
+
+		&.-sub {
+			.main-menu {
+				&__name {
+					padding-right: 1.6rem;
+					&:after {
+						content: '';
+						background: url('../icons/arrow-left.svg') no-repeat top left;
+						width: 10px;
+						height: 10px;
+						display: block;
+						background-size: 100% 100%;
+						transform: rotate(-90deg);
+						position: absolute;
+						top: 20px;
+						right: 4px;
+					}
+				}
+			}
+
+			@media (min-width: $screen-lg) {
+				margin-right: 1.8rem;
+			}
+		}
+
+		&.-active {
+			ul {
+				display: block;
+			}
+			.main-menu {
+				&__name {
+					background-color: var(--dark-color);
+					color: #fff;
+					&:after {
+						filter: brightness(0) invert(1);
+						transform: rotate(90deg);
+					}
+				}
+			}
+		}
+
+		@media (min-width: $screen-lg) {
+			margin-right: 4rem;
+			&:hover {
+				ul {
+					visibility: visible;
+					opacity: 1;
+				}
+			}
+		}
+	}
+}

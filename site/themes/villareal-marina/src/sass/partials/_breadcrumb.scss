@@ -1,0 +1,42 @@
+.breadcrumb{
+    width: 100%;
+    position: relative;
+    padding: 3rem 0;
+    background-color: #fff;
+    z-index: 10;
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        width: 100%;
+
+        a{
+            font-family: Aeonik;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 0;
+            color: var(--primary-color);
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+        svg{
+            width: 20px;
+            height: 20px;
+            fill: var(--primary-color);
+        }
+    }
+}
+
+.breadcrumb-block{
+    display: block;
+}
+
+.breadcrumb-none{
+    display: none;
+}

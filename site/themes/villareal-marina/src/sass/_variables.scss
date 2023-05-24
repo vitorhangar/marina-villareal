@@ -1,0 +1,57 @@
+:root {
+	--primary-color: #261201;
+    --secondary-color: #734E20;
+    --text-color-primary: #FFFFFF;
+	--link-color: #000000;
+    --font-size: 1.6em;
+}
+
+$screen-sm: 700px; // Extra small screen / phone
+$screen-md: 768px; // Small screen / tablet
+$screen-lg: 992px; // Medium screen / desktop
+$screen-xl: 1200px; // Large screen / wide desktop
+
+@font-face {
+	font-family: 'Aeonik';
+	src: url('../fonts/aeonik-regular-webfont.woff2') format('woff2'),
+		 url('../fonts/aeonik-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+  }
+
+/* width */
+::-webkit-scrollbar {
+	width: 8px;
+	background-color: #FFF;
+	border: solid 1px #fff;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	//box-shadow: inset 0 0 5px #FFF; 
+	border-radius: 0;
+	border: solid 1px #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: var(--primary-color); 
+	border-radius: 0;
+	border: solid 1px #fff;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	//background: #FFF;
+}
+
+::selection  {
+	background: #734e2059;
+	color: #FFF;
+}
+
+/* classes para firefox */
+::-moz-selection  {
+	background: #734e2059;
+	color: #FFF;
+}

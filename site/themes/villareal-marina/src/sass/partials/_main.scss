@@ -1,0 +1,10 @@
+main{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    @media(max-width: $screen-md){
+        overflow: initial;
+        background-color: var(--primary-color);
+    }
+}

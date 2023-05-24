@@ -1,0 +1,336 @@
+.page-contato{
+
+    .contact{
+        display: block;
+        position: relative;
+        width: 100%;
+        background-color: #fff;
+
+        &__content{
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+
+            @media(max-width: $screen-md ){
+                flex-direction: column;
+            }
+
+            &__title{
+                display: block;
+                width: 50%;
+                min-height: 650px;
+                padding: 5rem 0 5rem;
+
+                @media(max-width: $screen-md ){
+                    width: 100%;
+                    padding: 2rem 0 5rem;
+                }
+
+                @media(max-width: $screen-md - 1){
+                    min-height: auto;
+                }
+
+                .container{
+                    padding: 0 0 0 10rem;
+
+                    @media(max-width: $screen-md ){
+                        padding: 0 2rem 0;
+                    }
+    
+                    .breadcrumb{
+    
+                        .container{
+                            padding: 0;
+                        }
+                    }
+                }
+
+                h1, .subtitle{
+                    font-family: Aeonik;
+                    font-style: normal;
+                    color: var(--primary-color);
+                }
+    
+                h1{
+                    font-weight: bold;
+                    font-size: 42px;
+                    line-height: 50px;
+                }
+    
+                .subtitle{
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 30px;
+                }
+    
+                &__dados{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+    
+                    li{
+                        margin: 0 0 2rem;
+    
+                        p{
+                            font-family: Aeonik;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 16px;
+                            line-height: 25px;
+                            color: var(--primary-color);
+                            margin: 0;
+                        }
+    
+                        a{
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            gap: 10px;
+    
+                            svg{
+                                width: 24px;
+                                height: 24px;
+                                fill: var(--primary-color);
+                            }
+                        }
+                    }
+    
+                    .networks{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        gap: 8px;
+    
+                        @media(max-width: $screen-md){
+                            width: 100%;
+                            justify-content: center;
+                            margin: 3rem 0 0;
+                        }
+                    }
+                }
+            }
+
+            &__form{
+                width: 50%;            
+                min-height: 650px;
+                background-color: var(--primary-color);
+                padding: 9rem 0 5rem;
+
+                @media(max-width: $screen-md ){
+                    width: 100%;
+                    padding: 5rem 0 5rem;
+                }
+
+                @media(max-width: $screen-md - 1){
+                    min-height: auto;
+                }
+
+                .container{
+                    padding: 0 10rem 0 7rem;
+
+                    @media(max-width: $screen-md ){
+                        padding: 0 2rem 0;
+                    }
+                }
+
+                form{
+
+                    .box-form{
+                        width: 100%;
+                        
+                        .flex-field{
+                            width: 100%;
+
+                            .box-content{
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    .box-label{
+                        position: relative;
+                        width: 90%;
+                        margin: 0 0 2rem;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+
+                        @media(max-width: $screen-md ){
+                            width: 100%;
+                        }
+
+                        label{
+                            font-family: Aeonik;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 21px;
+                            text-align: center;
+                            color: var(--text-color-primary);
+                            padding: 0 5px;
+                            position: absolute;
+                            top: -10px;
+                            left: 8px;
+                            background-color: var(--primary-color);
+                            z-index: 1;
+                        }
+
+                        span{
+                            width: 100%;
+                            
+                            input, textarea{
+                                display: block;
+                                padding: 15px 10px;
+                                width: 100%;
+                                border: none;
+                                border: solid 2px var(--text-color-primary);
+                                border-radius: 5px;
+                                background-color: var(--primary-color);
+                                font-family: Aeonik;
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 14px;
+                                color: var(--text-color-primary);
+                                -webkit-appearance: none;
+                            }
+                            
+                            textarea{
+                                height: 100px;
+                            }
+                        }
+
+                        ::-webkit-input-placeholder {
+                            color: var(--text-color-primary);
+                        }
+                        
+                        :-moz-placeholder { /* Firefox 18- */
+                            color: var(--text-color-primary);
+                        }
+                        
+                        ::-moz-placeholder {  /* Firefox 19+ */
+                            color: var(--text-color-primary);
+                        }
+                        
+                        :-ms-input-placeholder {  
+                            color: var(--text-color-primary);
+                        }
+                    }
+                }
+
+                .lgpd-div{
+                    margin: 0 0 3rem;
+                    padding: 0;
+        
+                    .lgpd-sub-div{
+                        display: flex;
+                        justify-content: center;
+        
+                        .lgpd-links{
+                            color: var(--text-color-primary);
+                            font-size: 14px;
+                            line-height: 20px;
+                            font-family: Aeonik;
+        
+                            a{
+                                color: var(--text-color-primary);
+                                text-decoration: underline;
+                            }
+                        }
+        
+                        .lgpd-checkbox{
+                            margin: 0!important;
+                            display: flex;
+                            align-items: center;
+        
+                            span{
+                                border: none;
+                                color: transparent;
+                            }
+        
+                            .wpcf7-checkbox{
+                                padding: 0;
+                                margin: 0;
+        
+                                .first{
+                                    margin: 0;
+        
+                                    input{
+                                        all: unset;
+                                        border: 1px solid var(--primary-color);
+                                        width: 15px!important;
+                                        height: 15px;
+                                        border-radius: 5px;
+                                        display: inline-block;
+                                        margin-right: 5px;
+                                        background-color: transparent;
+                                        border: solid 2px #fff;
+                                        cursor: pointer;
+                                    }
+                    
+                                    input:checked{
+                                        background-color: #fff;
+                                        background-image: url(../images/svg/icon-checked.svg);
+                                        background-position: center center;
+                                        background-repeat: no-repeat;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .form-group{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+        
+                    .box-submit{
+                        position: relative;
+        
+                        input{
+                            border-radius: 30px;
+                            padding: 15px 20px;
+                            height: 50px;
+                            width: 200px;
+                            position: relative;
+                            text-align: center;
+                            background-color: #fff; 
+                            font-family: Aeonik;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 16px;
+                            line-height: 20px;
+                            text-transform: uppercase;
+                            color: var(--primary-color);
+                            overflow: hidden;
+                            cursor: pointer;
+
+                            -moz-transition: all .3s;
+                            -webkit-transition: all .3s;
+                            transition: all .3s;
+
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                            appearance: none;
+
+                            &:hover{
+                                -moz-transition: all .3s;
+                                -webkit-transition: all .3s;
+                                transition: all .3s;
+                                color: #fff;
+                                background-color: var(--secondary-color);
+                            }
+                        }
+            
+                        .ajax-loader{
+                            position: absolute;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

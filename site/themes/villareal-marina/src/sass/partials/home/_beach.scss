@@ -1,0 +1,186 @@
+.beach{
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 8rem 0;
+    background: linear-gradient(90deg,var(--primary-color) 0%,var(--secondary-color) 100%);
+
+    &__box{
+        width: 100%;
+
+        &__content{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+
+            @media (max-width: $screen-md - 1) {
+                flex-direction: column-reverse;
+            }
+
+            &__text{
+                width: 48%;
+
+                @media (max-width: $screen-md - 1) {
+                    width: 100%;
+                }
+
+                h2{
+                    font-family: Aeonik;
+                    font-style: normal;
+                    line-height: 100%;
+                    font-size: 70px;
+                    font-weight: 600;
+                    color: var(--text-color-primary);
+                    text-transform: uppercase;
+
+                    @media (max-width: $screen-md) {
+                        background: none;
+                        font-size: 55px;
+                    }
+
+                    @media (max-width: 320px) {
+                        font-size: 40px;
+                    }
+                }
+    
+                p{
+                    font-family: Aeonik;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 30px;
+                    color: var(--text-color-primary);
+                }
+            }
+    
+            &__image{
+                width: 48%;
+
+                @media (max-width: $screen-md - 1) {
+                    width: 100%;
+                    margin: 3rem 0 0;
+                }
+    
+                .slider{
+
+                    .item{
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 580px;
+                        height: 330px;
+                        border-radius: 15px;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center center;
+
+                        a{
+                            display: block;
+                            position: absolute;
+                            top: 10px;
+                            right: 10px;
+                            cursor: pointer;
+                            line-height: 0;
+
+                            -moz-transition: all 0.3s;
+                            -webkit-transition: all 0.3s;
+                            transition: all 0.3s;
+
+                            svg{
+                                width: 47px;
+                                height: 47px;
+                            }
+
+                            &:hover{
+                                -moz-transition: all 0.3s;
+                                -webkit-transition: all 0.3s;
+                                transition: all 0.3s;
+                                transform: rotate(90deg);
+                            }
+                        }
+                    }
+
+                    .slick-slide{
+
+                        &:focus{
+                            outline: none!important;
+                        }
+                    } 
+            
+                    .slick-arrow{
+                        width: 45px;
+                        height: 45px;
+                        z-index: 1;
+                    }
+            
+                    .slick-prev, .slick-next{
+                        border: none;
+                        top: 44%;
+                        box-shadow: 0px 0px 10px -1px #000;
+                        border-radius: 50%;
+                    }
+                    
+                    .slick-prev{
+                        -moz-transition: all 0.3s;
+                        -webkit-transition: all 0.3s;
+                        transition: all 0.3s;
+            
+                        @media(min-width: 1024px){
+
+                            &:hover{
+                                -moz-transition: all 0.3s;
+                                -webkit-transition: all 0.3s;
+                                transition: all 0.3s;
+                                transform: translateX(-10px);
+                            }
+                        }
+                    }
+            
+                    .slick-next{
+                        -moz-transition: all 0.3s;
+                        -webkit-transition: all 0.3s;
+                        transition: all 0.3s;
+            
+                        @media(min-width: 1024px){
+
+                            &:hover{
+                                -moz-transition: all 0.3s;
+                                -webkit-transition: all 0.3s;
+                                transition: all 0.3s;
+                                transform: translateX(10px);
+                            }
+                        }
+                    }
+            
+                    .slick-prev:before, .slick-next:before{
+                        color: #FFF;
+                        width: 10px;
+                        height: 10px;
+                        border-right: 2px solid;
+                        border-bottom: 2px solid;
+                    }
+            
+                    .slick-prev{    
+                        left: -2.3rem;
+                        background: url(../images/svg/button-arrow-left.svg) no-repeat center center;
+            
+                        @media (max-width: 1024px) {
+                            left: -1.3rem;
+                        }
+                    }
+            
+                    .slick-next{
+                        right: -2.3rem;
+                        background: url(../images/svg/button-arrow-right.svg) no-repeat center center;
+                        
+                        @media (max-width: 1024px) {
+                            right: -1.3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

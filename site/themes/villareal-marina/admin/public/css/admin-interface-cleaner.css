@@ -1,0 +1,22 @@
+@charset 'utf-8';
+
+
+
+/**
+ * Logo WP na barra do topo
+ */
+#wp-admin-bar-wp-logo,
+
+/**
+ * Submenus de Painel
+ */
+#menu-dashboard ul,
+
+/**
+ * Menu Ferramentas
+ */
+#menu-tools,
+#wp-admin-bar-comments,
+#wp-admin-bar-new-content{
+    display: none !important;
+}

@@ -1,0 +1,5 @@
+{
+    "name": "wpmirror/sitepress-multilingual-cms",
+    "type": "wordpress-plugin",
+    "require": {}
+}

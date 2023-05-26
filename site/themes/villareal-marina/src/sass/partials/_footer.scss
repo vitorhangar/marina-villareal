@@ -16,6 +16,12 @@ footer{
         justify-content: space-between;
         padding: 4rem 0;
 
+        img.footer-bg {
+            position: absolute;
+            bottom: 0;
+            left: 25%;
+        }
+
         .container{
             width: 100%;
         }
@@ -377,7 +383,7 @@ footer{
                 -webkit-transition: all .3s;
                 transition: all .3s;
         
-                background-color: #b79e5b;
+                background-color: #1b4b6386;
         
                 svg{
                     -moz-transition: all .3s;
@@ -448,4 +454,8 @@ footer{
             }
         }
     }
+}
+
+#HBotStruct {
+    display: none !important;
 }

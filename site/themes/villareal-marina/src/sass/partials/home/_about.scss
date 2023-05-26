@@ -2,32 +2,17 @@
     display: block;
     position: relative;
     width: 100%;
+    height: auto;
     padding: 8rem 0;
     background: #fff;
 
+    ul {
+        list-style-type: disc;
+        margin-left: 2rem;
+    }
+
     &__box{
         width: 100%;
-
-        &__title{
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-
-            h1{
-                font-family: Aeonik;
-                font-style: normal;
-                line-height: 100%;
-                font-size: 70px;
-                font-weight: 600;
-                background: -webkit-linear-gradient(0deg, var(--primary-color), var(--secondary-color));
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                -webkit-appearance: none;
-                -moz-appearance: none;
-                appearance: none;
-                text-transform: uppercase;
-            }
-        }
 
         &__content{
             display: flex;
@@ -44,14 +29,41 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                height: 330px;
 
                 @media (max-width: $screen-md - 1) {
                     width: 100%;
                     height: auto;
                 }
+
+                h1{
+                    font-family: Aeonik;
+                    font-style: normal;
+                    line-height: 100%;
+                    font-size: 70px;
+                    font-weight: 600;
+                    background: -webkit-linear-gradient(0deg, var(--primary-color), var(--secondary-color));
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                }
+
+                h2{
+                    font-family: Aeonik;
+                    font-style: normal;
+                    line-height: 100%;
+                    font-size: 42px;
+                    font-weight: 600;
+                    background: -webkit-linear-gradient(0deg, var(--primary-color), var(--secondary-color));
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                }
     
-                p{
+                p, li{
                     font-family: Aeonik;
                     font-style: normal;
                     font-weight: normal;
@@ -241,5 +253,37 @@
                 }
             }
         }
+    }
+}
+
+.about-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10rem;
+    margin-top: 6rem;
+
+    h2 {
+        font-family: Aeonik;
+        font-style: normal;
+        line-height: 100%;
+        font-size: 42px;
+        font-weight: 600;
+        background: -webkit-linear-gradient(0deg, var(--primary-color), var(--secondary-color));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+
+    p {
+        font-family: Aeonik;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 30px;
+        color: var(--primary-color);
+        margin: 0;
     }
 }

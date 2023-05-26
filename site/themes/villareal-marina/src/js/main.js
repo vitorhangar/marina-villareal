@@ -456,10 +456,121 @@ $(function () {
 			});
 		}
 
+		//==============================================================================================
+
+		//Slider Banner Hotel
+		if($('.banner .banner__box__content__image .slider').length) {
+			$('.banner .banner__box__content__image .slider').slick({
+				dots: false,
+				arrows: true,
+				slidesToScroll: 1,
+				slidesToShow: 1,
+				adaptiveHeight: true,
+				// autoplay: true,
+				// autoplaySpeed: 3000,
+				responsive: [
+					{
+						breakpoint: 991,
+						settings: {
+							dots: true,
+							arrows: false,
+							slidesToScroll: 1,
+							slidesToShow: 1,
+						}
+					}
+				]
+			});
+		}
+
+		//==============================================================================================
+
+		//Slider Details Hotel
+		if($('.details .details__box__content__image .slider').length) {
+			$('.details .details__box__content__image .slider').slick({
+				dots: false,
+				arrows: true,
+				slidesToScroll: 1,
+				slidesToShow: 1,
+				adaptiveHeight: true,
+				// autoplay: true,
+				// autoplaySpeed: 3000,
+				responsive: [
+					{
+						breakpoint: 991,
+						settings: {
+							dots: true,
+							arrows: false,
+							slidesToScroll: 1,
+							slidesToShow: 1,
+						}
+					}
+				]
+			});
+		}
+
+		//==============================================================================================
+
+		// Slick Slider Bedroom
+		if ($('.fotos .fotos__slider').length) {
+			$('.fotos .fotos__slider').slick({
+				dots: false,
+				arrows: true,
+				slidesToScroll: 1,
+				slidesToShow: 2,
+				adaptiveHeight: true,
+				// autoplay: true,
+				// autoplaySpeed: 3000,
+				responsive: [
+					{
+						breakpoint: 991,
+						settings: {
+							dots: true,
+							arrows: true,
+							slidesToScroll: 1,
+							slidesToShow: 1,
+						}
+					}
+				]
+			});
+		}
+
+		if ($('.fotos .image-slider').length) {
+			$('.fotos .image-slider').slick({
+				dots: true,
+				arrows: true,
+				slidesToScroll: 1,
+				slidesToShow: 1,
+				adaptiveHeight: true,
+				// autoplay: true,
+				// autoplaySpeed: 3000,
+				responsive: [
+					{
+						breakpoint: 991,
+						settings: {
+							dots: true,
+							arrows: true,
+							slidesToScroll: 1,
+							slidesToShow: 1,
+						}
+					}
+				]
+			});
+		}
+
+	// =============================================================================================
+
+		//Slick Slider Fotos - prev next
+		$('.fotos__slider .slick-prev, .fotos__slider .slick-next, .fotos__slider .slick-slide').on('click', function(){
+			var current = $('.fotos__slider .slick-current').data('current');
+
+			$('.fotos__change__right .qtd_fotos').text(current);
+		});
+
+
 	// =============================================================================================
 
 		//Slider Beach Hotel
-		if ($('.beach .beach__box__content__image .slider').length) {
+		if($('.beach .beach__box__content__image .slider').length) {
 			$('.beach .beach__box__content__image .slider').slick({
 				dots: false,
 				arrows: true,
@@ -484,6 +595,31 @@ $(function () {
 
 	// =============================================================================================
 
+		//Slider Estrutura Hotel
+		if($('.estrutura .estrutura__box__content__image .slider').length) {
+			$('.estrutura .estrutura__box__content__image .slider').slick({
+				dots: false,
+				arrows: true,
+				slidesToScroll: 1,
+				slidesToShow: 1,
+				adaptiveHeight: true,
+				// autoplay: true,
+				// autoplaySpeed: 3000,
+				responsive: [
+					{
+						breakpoint: 991,
+						settings: {
+							dots: true,
+							arrows: false,
+							slidesToScroll: 1,
+							slidesToShow: 1,
+						}
+					}
+				]
+			});
+		}
+
+	// =============================================================================================
 
 		// Slick Slider Bedroom
 		if ($('.bedroom .bedroom__slider').length) {
@@ -555,6 +691,11 @@ $(function () {
 
 		$('.about .about__box__content__image .slider .item svg').lightBox();
 		$('.beach .beach__box__content__image .slider .item svg').lightBox();
+		$('.fotos .fotos__box__content__image .slider .item svg').lightBox();
+		$('.details .details__box__content__image .slider .item svg').lightBox();
+		$('.bedroom .bedroom__box__content__image .slider .item svg').lightBox();
+		$('.estrutura .estrutura__box__content__image .slider .item svg').lightBox();
+		$('.banner .banner__box__content__image .slider .item svg').lightBox();
 
 	// =============================================================================================
 

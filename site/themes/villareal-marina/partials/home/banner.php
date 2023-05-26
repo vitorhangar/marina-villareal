@@ -8,17 +8,24 @@ if( ! defined( 'WPINC' ) ) {
     exit;
 }
 
+$ctr_banner = new CTR_Content();
+$banner = $ctr_banner->getBanners();
+
 ?>
 
 <section class="banner">
-    <div class="banner__content">
-        <video autoplay muted loop>
-            <source src="<?php echo theme_url('public/video/novo-hotel-villareal-caieiras-praia-central.mp4'); ?>" type="video/mp4">
-        </video>
-        <span>
-            <svg>
-                <use xlink:href="<?= theme_url('public/sprite/sprite.svg#icon__arrow__down'); ?>"/>
-            </svg>
-        </span>
+    <div class="banner__box__content">
+        <div class="banner__box__content__image">
+            <div class="slider">
+                <?php foreach($banner->gallery_images as $image): ?>
+                    <img src="<?= $image->imageSrc; ?>" alt="">
+                <?php endforeach; ?>
+            </div>
+        </div>
+        <div class="banner-bottom">
+            <?php foreach($banner->gallery_images as $image): ?>
+                <button></button>
+            <?php endforeach; ?>
+        </div>
     </div>
 </section>

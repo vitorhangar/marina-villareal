@@ -1,4 +1,4 @@
-.beach{
+.estrutura{
     display: block;
     position: relative;
     width: 100%;
@@ -12,6 +12,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            gap: 10rem;
             width: 100%;
 
             @media (max-width: $screen-md - 1) {
@@ -26,13 +27,13 @@
                 }
 
                 h2{
-                    font-family: Aeonik;
+                    font-family: 'Aeonik';
                     font-style: normal;
-                    line-height: 100%;
-                    font-size: 70px;
-                    font-weight: 600;
-                    color: var(--text-color-primary);
-                    text-transform: uppercase;
+                    font-weight: 700;
+                    font-size: 42px;
+                    line-height: 50px;
+                    letter-spacing: -0.5px;
+                    color: #95C4DC;
 
                     @media (max-width: $screen-md) {
                         background: none;
@@ -43,8 +44,13 @@
                         font-size: 40px;
                     }
                 }
+
+                ul {
+                    list-style-type: disc;
+                    margin-left: 2rem;
+                }
     
-                p{
+                li {
                     font-family: Aeonik;
                     font-style: normal;
                     font-weight: normal;

@@ -33,10 +33,6 @@ if( $page === 'single-treatments.php' ) {
 <body class="<?php echo $class; ?> overflow-hidden">
 
     <?php if($_SERVER['SERVER_NAME'] != 'localhost'): ?>
-        <!-- Google Tag Manager (noscript) -->
-            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJZMX8Z"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <!-- End Google Tag Manager (noscript) -->
     <?php endif; ?>
 
     <?php $tm->add_tag_manager_in_body() ?>

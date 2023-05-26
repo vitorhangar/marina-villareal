@@ -85,6 +85,19 @@ class MTB_Content {
             array(
 
                 array(
+                    'id'          => 'banner_images', // Obrigatório
+                    'label'       => __( 'BANNERS - Galeria de fotos:', 'odin' ), // Obrigatório
+                    'type'        => 'image_plupload', // Obrigatório
+                    'default'     => '', // Opcional (deve ser o id de uma imagem em mídias, separe os ids com virtula)
+                    'description' => __( 'O tamanho de imagem ideal é 560x330', 'odin' ), // Opcional
+                ),
+
+                array(
+                    'id'   => 'separator1',
+                    'type' => 'separator'
+                ),
+
+                array(
                     'id'          => 'about_title',
                     'label'       => __( 'SOBRE - Título:', 'odin' ),
                     'type'        => 'text',
@@ -110,20 +123,20 @@ class MTB_Content {
                 ),
 
                 array(
-                    'id'          => 'beach_title',
-                    'label'       => __( 'A Praia - Título:', 'odin' ),
+                    'id'          => 'estrut_title',
+                    'label'       => __( 'Estrutura - Título:', 'odin' ),
                     'type'        => 'text',
                 ),
 
                 array(
-                    'id'          => 'beach_text',
-                    'label'       => __( 'A Praia - Texto:', 'odin' ),
+                    'id'          => 'estrut_text',
+                    'label'       => __( 'Estrutura - Texto:', 'odin' ),
                     'type'        => 'editor',
                 ),
 
                 array(
-                    'id'          => 'beach_images', // Obrigatório
-                    'label'       => __( 'A Praia - Galeria de fotos:', 'odin' ), // Obrigatório
+                    'id'          => 'estrut_images', // Obrigatório
+                    'label'       => __( 'Estrutura - Galeria de fotos:', 'odin' ), // Obrigatório
                     'type'        => 'image_plupload', // Obrigatório
                     'default'     => '', // Opcional (deve ser o id de uma imagem em mídias, separe os ids com virtula)
                     'description' => __( 'O tamanho de imagem ideal é 560x330', 'odin' ), // Opcional
@@ -175,6 +188,101 @@ class MTB_Content {
                     'label'       => __( 'DETALHES 2º - Imagem:', 'odin' ), // Obrigatório
                     'type'        => 'image', // Obrigatório
                     'description' => __( 'O tamanho de imagem ideal é 560x330', 'odin' ), // Opcional
+                ),
+
+                array(
+                    'id'          => 'baia_title',
+                    'label'       => __( 'BAÍA - Título:', 'odin' ),
+                    'type'        => 'text',
+                ),
+
+                array(
+                    'id'          => 'baia_text',
+                    'label'       => __( 'BAÍA - Texto:', 'odin' ),
+                    'type'        => 'editor',
+                ),
+
+                array(
+                    'id'          => 'baia_images', // Obrigatório
+                    'label'       => __( 'BAÍA:', 'odin' ), // Obrigatório
+                    'type'        => 'image_plupload', // Obrigatório
+                    'default'     => '', // Opcional (deve ser o id de uma imagem em mídias, separe os ids com virtula)
+                    'description' => __( 'O tamanho de imagem ideal é 560x330', 'odin' ), // Opcional
+                ),
+
+                array(
+                    'id'   => 'separator1',
+                    'type' => 'separator'
+                ),
+
+                array(
+                    'id'          => 'segur_title',
+                    'label'       => __( 'SEGURANÇA - Título:', 'odin' ),
+                    'type'        => 'text',
+                ),
+
+                array(
+                    'id'          => 'segur_text',
+                    'label'       => __( 'SEGURANÇA - Texto:', 'odin' ),
+                    'type'        => 'editor',
+                ),
+
+                array(
+                    'id'          => 'segur_images', // Obrigatório
+                    'label'       => __( 'SEGURANÇA:', 'odin' ), // Obrigatório
+                    'type'        => 'image_plupload', // Obrigatório
+                    'default'     => '', // Opcional (deve ser o id de uma imagem em mídias, separe os ids com virtula)
+                    'description' => __( 'O tamanho de imagem ideal é 560x330', 'odin' ), // Opcional
+                ),
+
+                array(
+                    'id'   => 'separator1',
+                    'type' => 'separator'
+                ),
+
+                array(
+                    'id'          => 'seguranca_title',
+                    'label'       => __( 'Segurança - Título:', 'odin' ),
+                    'type'        => 'text',
+                ),
+
+                array(
+                    'id'          => 'segurança_text',
+                    'label'       => __( 'Segurança - Texto:', 'odin' ),
+                    'type'        => 'editor',
+                ),
+
+                array(
+                    'id'          => 'segurança_images', // Obrigatório
+                    'label'       => __( 'Segurança:', 'odin' ), // Obrigatório
+                    'type'        => 'image_plupload', // Obrigatório
+                    'default'     => '', // Opcional (deve ser o id de uma imagem em mídias, separe os ids com virtula)
+                    'description' => __( 'O tamanho de imagem ideal é 560x330', 'odin' ), // Opcional
+                ),
+
+                array(
+                    'id'          => 'fotos_images', // Obrigatório
+                    'label'       => __( 'FOTOS DA MARINA:', 'odin' ), // Obrigatório
+                    'type'        => 'image_plupload', // Obrigatório
+                    'default'     => '', // Opcional (deve ser o id de uma imagem em mídias, separe os ids com virtula)
+                    'description' => __( 'O tamanho de imagem ideal é 560x330', 'odin' ), // Opcional
+                ),
+
+                array(
+                    'id'   => 'separator1',
+                    'type' => 'separator'
+                ),
+
+                array(
+                    'id'          => 'preco_title',
+                    'label'       => __( 'Preços - Título:', 'odin' ),
+                    'type'        => 'text',
+                ),
+
+                array(
+                    'id'          => 'preco_text',
+                    'label'       => __( 'Preços - Texto:', 'odin' ),
+                    'type'        => 'editor',
                 ),
 
             )

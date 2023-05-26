@@ -16,10 +16,8 @@ $info_site = $ctr_content->getInfos();
 <div class="main-header <?php if(!is_page('home')){echo 'main-header-normal';} ?>">
 	<div class="container">
 		<div class="main-logo">
-			<a href="<?php echo get_site_url(); ?>" title="Hotel VillaReal marina">
-				<svg>
-					<use xlink:href="<?= theme_url('public/sprite/sprite.svg#icon__logo__header'); ?>"/>
-				</svg>
+			<a href="<?php echo get_site_url(); ?>" title="VillaReal Marina">
+				<img src="<?= theme_url('public/images/logo-blue.png'); ?>" alt="logo">
 			</a>
 		</div>
 		
@@ -27,11 +25,10 @@ $info_site = $ctr_content->getInfos();
 
 			<div class="main-menu">
 				<div class="btn-header">
-					
-					<?php 
+				<?php 
 						$menu = wp_get_nav_menu_items('menu-portugues'); 
 						$cont = 1;
-						$data_link = ['/#about', '/#beach', '/#bedroom'];
+						$data_link = ['/#marina', '/#lazer', '/#sustentabilidade', '/#baia', '/#eventos', '/#fotos', '/#precos'];
 					?>
 
 					<?php foreach($menu as $item): ?>
@@ -45,7 +42,6 @@ $info_site = $ctr_content->getInfos();
 						$cont++; 
 						endforeach;
 					?>
-					<a href="" target="_blank" class="reserva" rel="noopener">Reservar Agora</a>
 					<!-- <a href="tel:+5541999745731" class="link-menu phone click-telefone">
 						<svg>
 							<use xlink:href="<?//= theme_url('public/sprite/sprite.svg#icon__phone'); ?>"/>
@@ -65,13 +61,12 @@ $info_site = $ctr_content->getInfos();
 						</a>
 					</div>
 				</div>
-			</div>
 
-			<div class="ham">
-				<div class="ham__item"></div>
-				<div class="ham__item"></div>
-				<div class="ham__item"></div>
-			</div>
+				<div class="ham">
+					<div class="ham__item"></div>
+					<div class="ham__item"></div>
+					<div class="ham__item"></div>
+				</div>
 		</div>
 	</div>
 </div>

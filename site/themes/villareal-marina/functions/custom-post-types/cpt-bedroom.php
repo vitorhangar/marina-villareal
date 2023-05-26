@@ -16,7 +16,7 @@ class CPT_Bedroom{
 	function create_post_type() {
 
 		$bedroom = new Odin_Post_Type(
-			'Quarto',
+			'Evento',
 			'bedroom'
 		);
 
@@ -34,17 +34,17 @@ class CPT_Bedroom{
 
 		$bedroom->set_labels(
 			array(
-				'menu_name'          => 'Quartos',
-				'singular_name'      => 'Quarto',
-				'add_new'            => 'Adicionar novo Quarto',
-				'add_new_item'       => 'Adicionar novo Quarto',
-				'edit_item'          => 'Editar Quarto',
-				'new_item'           => 'Novo Quarto',
-				'all_items'          => 'Todos os Quartos',
-				'view_item'          => 'Ver Quarto',
-				'search_items'       => 'Procurar Quarto',
-				'not_found'          => 'Nenhum Quarto encontrado',
-				'not_found_in_trash' => 'Nenhum Quarto encontrado na lixeira',
+				'menu_name'          => 'Eventos',
+				'singular_name'      => 'Evento',
+				'add_new'            => 'Adicionar novo evento',
+				'add_new_item'       => 'Adicionar novo evento',
+				'edit_item'          => 'Editar Evento',
+				'new_item'           => 'Novo Evento',
+				'all_items'          => 'Todos os Eventos',
+				'view_item'          => 'Ver Evento',
+				'search_items'       => 'Procurar Evento',
+				'not_found'          => 'Nenhum Evento encontrado',
+				'not_found_in_trash' => 'Nenhum Evento encontrado na lixeira',
 				'parent_item_colon'  => '',
 			)
 		);

@@ -1,6 +1,6 @@
 <?php
 /**
- * Details
+ * Bedroom
  */
 
 if( ! defined( 'WPINC' ) ) {
@@ -8,48 +8,37 @@ if( ! defined( 'WPINC' ) ) {
     exit;
 }
 
-$ctr_content = new CTR_Content();
-$detail = $ctr_content->getDetails();
+$ctr_seguranca = new CTR_Content();
+$seguranca = $ctr_seguranca->getSegurancaa();
 
 ?>
 
-<section class="details">
+<section class="details" id="details">
     <div class="container">
-        <div class="details__box">
-            <div class="details__box__top" data-aos="fade-right" data-aos-duration="800">
-                <div class="text-icon icon-coffe">
-                    <span>
-                        <svg>
-                            <use xlink:href="<?= theme_url('public/sprite/sprite.svg#icon__coffe'); ?>"/>
-                        </svg>
-                    </span>
-                    <h3><?= $detail->details_title_1; ?></h3>
-                    <?= wpautop($detail->details_text_1); ?>
-                </div>
-                <div class="image zoom" style="background-image: url(<?= $detail->details_image_1->imageSrc; ?>);">
-                    <a href="<?= $detail->details_image_1->imageSrc; ?>" data-lightbox="image-details" title="Ampliar Imagem" rel="lightbox">
-                        <svg>
-                            <use xlink:href="<?= theme_url('public/sprite/sprite.svg#icon__expand'); ?>"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="details__box__bottom" data-aos="fade-left" data-aos-duration="800">
-                <div class="image zoom" style="background-image: url(<?= $detail->details_image_2->imageSrc; ?>);">
-                    <a href="<?= $detail->details_image_2->imageSrc; ?>" data-lightbox="image-details" title="Ampliar Imagem" rel="lightbox">
-                        <svg>
-                            <use xlink:href="<?= theme_url('public/sprite/sprite.svg#icon__expand'); ?>"/>
-                        </svg>
-                    </a>
-                </div>
-                <div class="text-icon icon-beach">
-                    <span>
-                        <svg>
-                            <use xlink:href="<?= theme_url('public/sprite/sprite.svg#icon__beach'); ?>"/>
-                        </svg>
-                    </span>
-                    <h3><?= $detail->details_title_2; ?></h3>
-                    <?= wpautop($detail->details_text_2); ?>
+        <div class="details__box" <?php if(!wp_is_mobile()){ echo 'data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-offset="-230" data-aos-duration="500"';} ?> >
+            <div class="details-top">
+                <div class="details__box__content">
+                    <div class="details__box__content__image">
+                        <div class="slider">
+
+                            <?php foreach($seguranca->gallery_images as $image): ?>
+                                <div class="item" style="background-image: url(<?= $image->imageSrc; ?>);">
+                                    <a href="<?= $image->imageSrc; ?>" data-lightbox="image-hotel" title="Ampliar Imagem" rel="lightbox">
+                                        <svg>
+                                            <use xlink:href="<?= theme_url('public/sprite/sprite.svg#icon__expand'); ?>"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            <?php endforeach; ?>
+
+                        </div>
+                    </div>
+                    <div class="details__box__content__text">
+                        <div>
+                            <h2><?= $seguranca->title; ?></h2>
+                            <?= wpautop($seguranca->content); ?>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

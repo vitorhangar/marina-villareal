@@ -15,13 +15,12 @@ $info_site = $ctr_content->getInfos();
 
 <footer> 
     <?= $info_site->adress_link_embed; ?>
-    <div class="footer-top">   
+    <div class="footer-top">
+        <img class="footer-bg" src="<?= theme_url('public/images/footer-bg.png'); ?>" alt="image">  
         <div class="container">
             <div class="footer-top__content">
-                <a href="" class="footer-top__content__logo" title="Hotel VillaReal marina">
-                    <svg>
-                        <use xlink:href="<?= theme_url('public/sprite/sprite.svg#icon__logo__footer'); ?>"/>
-                    </svg>
+                <a href="" class="footer-top__content__logo" titlse="VillaReal Marina">
+                    <img src="<?= theme_url('public/images/logo.png'); ?>" alt="logo">
                 </a>
 
                 <?php 
@@ -90,35 +89,6 @@ $info_site = $ctr_content->getInfos();
                         </a>
                     </li>
                 </ul>
-            </div>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <div class="container">
-            <div class="footer-bottom__content">
-                <p class="copyright">VillaReal Hotel de marina © Todos os direitos reservados. <?= date('Y'); ?></p>
-                <div class="footer-bottom__content__flags">
-                    <p>Pague com:</p>
-                    <div class="footer-bottom__content__flags__top">
-                        <svg class="icon_visa">
-                            <use xlink:href="<?= theme_url('public/sprite/sprite.svg#icon_visa'); ?>"/>
-                        </svg>
-                        <svg class="icon_mastercard">
-                            <use xlink:href="<?= theme_url('public/sprite/sprite.svg#icon_mastercard'); ?>"/>
-                        </svg>
-                    </div>
-                    <div class="footer-bottom__content__flags__bottom">
-                        <svg class="icon_elo">
-                            <use xlink:href="<?= theme_url('public/sprite/sprite.svg#icon_elo'); ?>"/>
-                        </svg>
-                        <svg class="icon_hipercard">
-                            <use xlink:href="<?= theme_url('public/sprite/sprite.svg#icon_hipercard'); ?>"/>
-                        </svg>
-                    </div>
-                </div>
-                <a class="hangar_link" href="http://hangar.digital" rel="nofollow" title="Agência de Marketing Digital em Joinville" target="_blank"> 
-                    <img class="hangar_link-logo" src="<?= theme_url('public/images/svg/logo-hangar.svg')  ?>" alt="hangar digital criação de sites e lojas virtuais em joinville"  > 
-                </a>
             </div>
         </div>
     </div>

@@ -23,6 +23,12 @@ $info_site = $ctr_content->getInfos();
 		
 		<div class="main-header__menu">
 
+			<div class="ham">
+				<div class="ham__item"></div>
+				<div class="ham__item"></div>
+				<div class="ham__item"></div>
+			</div>
+
 			<div class="main-menu">
 				<div class="btn-header">
 				<?php 
@@ -60,12 +66,6 @@ $info_site = $ctr_content->getInfos();
 							</svg>
 						</a>
 					</div>
-				</div>
-
-				<div class="ham">
-					<div class="ham__item"></div>
-					<div class="ham__item"></div>
-					<div class="ham__item"></div>
 				</div>
 		</div>
 	</div>

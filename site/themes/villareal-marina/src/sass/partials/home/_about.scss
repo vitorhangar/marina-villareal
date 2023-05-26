@@ -263,6 +263,10 @@
     gap: 10rem;
     margin-top: 6rem;
 
+    @media (max-width: 1024px) {
+        flex-direction: column;
+    }
+
     h2 {
         font-family: Aeonik;
         font-style: normal;

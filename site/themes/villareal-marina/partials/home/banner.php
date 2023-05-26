@@ -22,10 +22,5 @@ $banner = $ctr_banner->getBanners();
                 <?php endforeach; ?>
             </div>
         </div>
-        <div class="banner-bottom">
-            <?php foreach($banner->gallery_images as $image): ?>
-                <button></button>
-            <?php endforeach; ?>
-        </div>
     </div>
 </section>

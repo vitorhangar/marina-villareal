@@ -144,18 +144,25 @@
                     color: #FFF;
                 }
         
-                .slick-prev{    
+                .slick-prev {
                     left: -2.3rem;
-                    background: url(../images/svg/button-arrow-left.svg) no-repeat center center;
-        
+                    background: url(../images/svg/arrow-left.svg) no-repeat center center, #fff;
+                    color: #fff;
+                    background-size: 10%;
+                    background-position: center center;
+                    
                     @media (max-width: 1024px) {
-                        left: -1.3rem;
+                      left: -1.3rem;
                     }
-                }
+                  }
         
                 .slick-next{
                     right: -2.3rem;
-                    background: url(../images/svg/button-arrow-right.svg) no-repeat center center;
+                    background: url(../images/svg/arrow-left.svg) no-repeat center center, #fff;
+                    color: #fff;
+                    background-size: 10%;
+                    background-position: center center;
+                    transform: rotate(180deg);
                     
                     @media (max-width: 1024px) {
                         right: -1.3rem;

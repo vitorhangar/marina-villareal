@@ -8,7 +8,7 @@
 
 	@media (max-width: $screen-lg - 1px) {
 		position: fixed;
-		background-color: #734e20ed;
+		background-color: var(--primary-color);
 		top: 0;
 		left: 0;
 		width: 100%;

@@ -11,6 +11,10 @@
     img {
         position: absolute;
         top: -8rem;
+
+        @media(max-width: 765px){
+            top: -3rem !important;
+        }
     }
 
     div {
@@ -28,9 +32,13 @@
         color: #95C4DC;
         text-align: center;
     
-        @media(max-width: 320px){
-            font-size: 50px;
-            line-height: 60px;
+        @media (max-width: $screen-md) {
+            background: none;
+            font-size: 55px;
+        }
+
+        @media (max-width: 320px) {
+            font-size: 40px;
         }
     }
     

@@ -43,6 +43,12 @@ class MTB_Content {
                         'label'       => __( 'Link do endereço (Embed ex.: ...google.com/maps/embed?pb=...):', 'odin' ),
                         'type'        => 'textarea',
                     ),
+
+                    array(
+                        'id'          => 'coordenadas',
+                        'label'       => __( 'Coordenadas:', 'odin' ),
+                        'type'        => 'text',
+                    ),
                     
                     array(
                         'id'          => 'telefone',

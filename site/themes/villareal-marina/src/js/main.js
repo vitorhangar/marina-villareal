@@ -122,7 +122,14 @@ $(function () {
 		});
 
 	//==============================================================================================
-	
+		
+		// Click WhatsApp
+		$('.btn-whats').on('click', function(e){
+			window.open('https://wa.me/55'+WHATS_NUM+'?text=Ol%C3%A1.+Acessei+seu+*site*+e+gostaria+de+ter+mais+informa%C3%A7%C3%B5es.', '_blank');
+		});
+
+		//===========================================================================================
+
 		//date-dropper
 		$('#date-input-checkin').dateDropper({
 			eventSelector: 'click',
@@ -461,7 +468,7 @@ $(function () {
 		//Slider Banner Hotel
 		if($('.banner .banner__box__content__image .slider').length) {
 			$('.banner .banner__box__content__image .slider').slick({
-				dots: false,
+				dots: true,
 				arrows: true,
 				slidesToScroll: 1,
 				slidesToShow: 1,

@@ -14,6 +14,7 @@ class CTR_Content {
             $post->adress              = get_post_meta($post->ID, 'endereco', true);
             $post->adress_link         = get_post_meta($post->ID, 'endereco_link', true);
             $post->adress_link_embed   = get_post_meta($post->ID, 'endereco_link_embed', true);
+            $post->coordinates         = get_post_meta($post->ID, 'coordenadas', true);
             $post->telefone            = get_post_meta($post->ID, 'telefone', true);
             $post->email               = get_post_meta($post->ID, 'email', true);
             $post->facebook            = get_post_meta($post->ID, 'facebook', true);

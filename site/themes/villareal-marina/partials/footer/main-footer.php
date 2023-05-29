@@ -20,7 +20,9 @@ $info_site = $ctr_content->getInfos();
         <div class="container">
             <div class="footer-top__content">
                 <a href="" class="footer-top__content__logo" titlse="VillaReal Marina">
-                    <img src="<?= theme_url('public/images/logo.png'); ?>" alt="logo">
+                    <svg>
+                        <use xlink:href="<?= theme_url('public/sprite/sprite.svg#logo-marina-white'); ?>"/>
+                    </svg>
                 </a>
 
                 <?php 
@@ -60,6 +62,14 @@ $info_site = $ctr_content->getInfos();
                         </a>
                     </li>
                     <li>
+                        <a href="<?= $info_site->adress_link; ?>" target="_blank">
+                            <svg>
+                                <use xlink:href="<?= theme_url('public/sprite/sprite.svg#icon-coordenadas'); ?>"/>
+                            </svg>    
+                            <p><?= $info_site->coordinates; ?></p>
+                        </a>
+                    </li>
+                    <li>
                         <a href="tel:<?= str_replace(array('(', ')', '-', ' ', '+'), '', $info_site->telefone);?>" class="click-telefone">
                             <svg>
                                 <use xlink:href="<?= theme_url('public/sprite/sprite.svg#icon__phone'); ?>"/>
@@ -93,14 +103,14 @@ $info_site = $ctr_content->getInfos();
         </div>
     </div>
     <div class="footer-btn">
-        <!-- <a href="https://wa.me/5541999745731?text=Ol%C3%A1%21+Entrei+no+*site*+Hotel+VillaReal+marina+e+gostaria+de+mais+informa%C3%A7%C3%B5es.+%E2%9E%A1" class="btn-whats click-whatsapp" target="_blank" title="Whatsapp" rel="noopener" class="btn-whats">
-            <svg>
-                <use xlink:href="<?//= theme_url('public/sprite/sprite.svg#icon__whats'); ?>"/>
-            </svg>
-        </a> -->
         <a rel="noopener" class="btn-back-top">
             <svg>
                 <use xlink:href="<?= theme_url('public/sprite/sprite.svg#icon__arrow__up'); ?>"/>
+            </svg>
+        </a>
+        <a href="https://wa.me/<?= $info_site->telefone; ?>?text=Ol%C3%A1%21+Entrei+no+*site*+Hotel+VillaReal+Marina+e+gostaria+de+mais+informa%C3%A7%C3%B5es.+%E2%9E%A1" class="btn-whats click-whatsapp" target="_blank" title="Whatsapp" rel="noopener" class="btn-whats">
+            <svg>
+                <use xlink:href="<?= theme_url('public/sprite/sprite.svg#icon__whats'); ?>"/>
             </svg>
         </a>
     </div>

@@ -17,6 +17,7 @@
 
             @media (max-width: $screen-md - 1) {
                 flex-direction: column-reverse;
+                gap: 5rem;
             }
 
             &__text{
@@ -36,7 +37,6 @@
                     color: #95C4DC;
 
                     @media (max-width: $screen-md) {
-                        background: none;
                         font-size: 55px;
                     }
 
@@ -165,7 +165,10 @@
             
                     .slick-prev{    
                         left: -2.3rem;
-                        background: url(../images/svg/button-arrow-left.svg) no-repeat center center;
+                        background: url(../images/svg/arrow-left.svg) no-repeat center center, #fff;
+                        color: #fff;
+                        background-size: 50%;
+                        background-position: center center;
             
                         @media (max-width: 1024px) {
                             left: -1.3rem;
@@ -174,7 +177,10 @@
             
                     .slick-next{
                         right: -2.3rem;
-                        background: url(../images/svg/button-arrow-right.svg) no-repeat center center;
+                        background: url(../images/svg/arrow-right.svg) no-repeat center center, #fff;
+                        color: #fff;
+                        background-size: 50%;
+                        background-position: center center;
                         
                         @media (max-width: 1024px) {
                             right: -1.3rem;

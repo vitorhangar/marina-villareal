@@ -19,7 +19,7 @@
             display: block;
             padding: 0 4rem 0 0;
             position: relative;
-            width: 155px;
+            width: 105px;
             height: 85px;
 
             @media(max-width: $screen-md - 1){
@@ -50,9 +50,12 @@
             letter-spacing: -1.5px;
             color: #0F2B39;
 
-            @media(max-width: 320px){
-                font-size: 50px;
-                line-height: 60px;
+            @media (max-width: $screen-md) {
+                font-size: 55px;
+            }
+
+            @media (max-width: 320px) {
+                font-size: 40px;
             }
         }
     }
@@ -476,7 +479,10 @@
 
         .slick-prev{    
             right: 19rem;
-            background: url(../images/svg/button-arrow-left.svg) no-repeat center center;
+            background: url(../images/svg/arrow-left-white.svg) no-repeat center center, var(--primary-color);
+            color: #fff;
+            background-size: 16%;
+            background-position: center center;
 
             @media (max-width: 1024px) {
                 right: 8rem;
@@ -485,7 +491,10 @@
 
         .slick-next{
             right: 13rem;
-            background: url(../images/svg/button-arrow-right.svg) no-repeat center center;
+            background: url(../images/svg/arrow-right-white.svg) no-repeat center center, var(--primary-color);
+            color: #fff;
+            background-size: 16%;
+            background-position: center center;
             
             @media (max-width: 1024px) {
                 right: 2rem;

@@ -112,11 +112,15 @@ body.lb-disable-scrolling {
 
 .lb-nav a.lb-prev {
   width: 45px;
+  height: 45px;
   left: 0;
   float: left;
-  background: url(../images/svg/button-arrow-left.svg) left 48% no-repeat;
-  background-size: contain;
-  background-position: 100%;
+  background: url(../images/svg/arrow-left.svg) left 48% no-repeat, #fff;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px -1px #000;
+  color: #fff;
+  background-size: 50%;
+  background-position: center center;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 1;
   display: block!important;
@@ -131,11 +135,15 @@ body.lb-disable-scrolling {
 
 .lb-nav a.lb-next {
   width: 45px;
-  right: 0px;
+  height: 45px;
+  left: 0;
   float: right;
-  background: url(../images/svg/button-arrow-right.svg) no-repeat;
-  background-size: contain;
-  background-position: 100%;
+  background: url(../images/svg/arrow-right.svg) left 48% no-repeat, #fff;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px -1px #000;
+  color: #fff;
+  background-size: 50%;
+  background-position: center center;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 1;
   display: block!important;

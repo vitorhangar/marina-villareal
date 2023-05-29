@@ -22,6 +22,7 @@
 
             @media (max-width: $screen-md - 1) {
                 flex-direction: column;
+                gap: 2rem;
             }
 
             &__text{
@@ -47,6 +48,14 @@
                     -webkit-appearance: none;
                     -moz-appearance: none;
                     appearance: none;
+
+                    @media (max-width: $screen-md) {
+                        font-size: 55px;
+                    }
+            
+                    @media (max-width: 320px) {
+                        font-size: 40px;
+                    }
                 }
 
                 h2{
@@ -235,7 +244,10 @@
             
                     .slick-prev{    
                         left: -2.3rem;
-                        background: url(../images/svg/button-arrow-left.svg) no-repeat center center;
+                        background: url(../images/svg/arrow-left.svg) no-repeat center center, #fff;
+                        color: #fff;
+                        background-size: 50%;
+                        background-position: center center;
             
                         @media (max-width: 1024px) {
                             left: -1.3rem;
@@ -244,7 +256,10 @@
             
                     .slick-next{
                         right: -2.3rem;
-                        background: url(../images/svg/button-arrow-right.svg) no-repeat center center;
+                        background: url(../images/svg/arrow-right.svg) no-repeat center center, #fff;
+                        color: #fff;
+                        background-size: 50%;
+                        background-position: center center;
                         
                         @media (max-width: 1024px) {
                             right: -1.3rem;
@@ -265,6 +280,14 @@
 
     @media (max-width: 1024px) {
         flex-direction: column;
+    }
+
+    @media (max-width: $screen-md) {
+        gap: 2rem !important;
+
+        .about-bottom-texts {
+            order: -1;
+        }
     }
 
     h2 {

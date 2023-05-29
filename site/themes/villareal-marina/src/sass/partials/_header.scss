@@ -15,6 +15,10 @@
 		display: none;
 	}
 
+	@media (max-width: 962px) {
+		padding: 1.5rem 1rem;
+	}
+
 	&__item {
 		display: block;
 		width: 100%;
@@ -71,21 +75,21 @@
 
         a{
 
-            img{
-                width: 115px;
-                height: 126px;
+            svg {
+                width: 123px;
+                height: 134px;
 
 				@media (max-width: 912px) {
-					display: none;
+					display: none !important;
 				}
             }
 
 			@media (max-width: 912px) {
-				background-image: url(../images/svg/Logo-Hotel-marina-Mobile.svg);
+				background-image: url(../images/svg/LOGOMARINA-MOBILE.svg);
 				background-repeat: no-repeat;
 				background-size: cover;
-				width: 68px;
-				height: 61px;
+				width: 81px;
+                height: 87px;
 			}
         }
 	}
@@ -374,6 +378,10 @@
 	background: linear-gradient(90deg, #08171F 0%, #1B4B63 99.93%);
 	box-shadow: 0px 13px 20px rgba(38, 18, 1, 0.3);
 	padding-top: 2rem;
+
+	@media (max-width: 962px) {
+		height: 70px;
+	}
 	
 	.container{
 		height: 60px;

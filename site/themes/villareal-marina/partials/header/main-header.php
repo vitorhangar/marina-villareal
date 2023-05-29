@@ -17,7 +17,9 @@ $info_site = $ctr_content->getInfos();
 	<div class="container">
 		<div class="main-logo">
 			<a href="<?php echo get_site_url(); ?>" title="VillaReal Marina">
-				<img src="<?= theme_url('public/images/logo-blue.png'); ?>" alt="logo">
+				<svg>
+					<use xlink:href="<?= theme_url('public/sprite/sprite.svg#logo-marina'); ?>"/>
+				</svg>
 			</a>
 		</div>
 		

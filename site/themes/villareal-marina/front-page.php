@@ -19,8 +19,8 @@ get_header(); ?>
         <?php inc('partials/filter'); ?>
         <?php inc('partials/home/about'); ?>
         <?php inc('partials/home/estrutura'); ?>
-        <?php inc('partials/home/details'); ?>
-        <?php inc('partials/home/bedroom'); ?>
+        <?php inc('partials/home/seguranca'); ?>
+        <?php inc('partials/home/baia'); ?>
         <?php inc('partials/home/lazer'); ?>
         <?php inc('partials/home/eventos'); ?>
         <?php inc('partials/home/fotos'); ?>

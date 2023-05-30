@@ -18,7 +18,9 @@ $banner = $ctr_banner->getBanners();
         <div class="banner__box__content__image">
             <div class="slider">
                 <?php foreach($banner->gallery_images as $image): ?>
-                    <img src="<?= $image->imageSrc; ?>" alt="">
+                    <?php if($image->imageSrc != ''): ?>
+                        <img src="<?= $image->imageSrc; ?>" alt="">
+                    <?php endif; ?>
                 <?php endforeach; ?>
             </div>
         </div>

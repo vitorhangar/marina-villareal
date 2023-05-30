@@ -39,8 +39,10 @@ class CTR_Content {
             $id_gallery_images = explode(",",$id_gallery);
 
             for($i = 0; $i < count($id_gallery_images); $i++ ) {
-                
-                $info->gallery_images[$i] = ImageFactory::create( $id_gallery_images[$i] , 300 , 300, true);
+
+                if($id_gallery_images[$i] != '') {
+                    $info->gallery_images[$i] = ImageFactory::create( $id_gallery_images[$i] , 300 , 300, true);
+                }
                 
             }
         }       
@@ -62,13 +64,24 @@ class CTR_Content {
             $info->title    = get_post_meta($post->ID, 'about_title', true);
             $info->content  = get_post_meta($post->ID, 'about_text', true);
 
+            $info->title2    = get_post_meta($post->ID, 'about_title2', true);
+            $info->content2  = get_post_meta($post->ID, 'about_text2', true);
+
+
             $id_gallery = get_post_meta($post->ID ,"about_images", "true");
             $id_gallery_images = explode(",",$id_gallery);
 
             for($i = 0; $i < count($id_gallery_images); $i++ ) {
                 
                 $info->gallery_images[$i] = ImageFactory::create( $id_gallery_images[$i] , 300 , 300, true);
+            }
+
+            $id_gallery2 = get_post_meta($post->ID ,"about_images2", "true");
+            $id_gallery_images2 = explode(",",$id_gallery2);
+
+            for($i = 0; $i < count($id_gallery_images2); $i++ ) {
                 
+                $info->gallery_images2[$i] = ImageFactory::create( $id_gallery_images2[$i] , 300 , 300, true);
             }
         }       
 

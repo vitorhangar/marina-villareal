@@ -491,9 +491,9 @@ $(function () {
 
 		//==============================================================================================
 
-		//Slider Details Hotel
-		if($('.details .details__box__content__image .slider').length) {
-			$('.details .details__box__content__image .slider').slick({
+		//Slider Seguranca Hotel
+		if($('.seguranca .seguranca__box__content__image .slider').length) {
+			$('.seguranca .seguranca__box__content__image .slider').slick({
 				dots: false,
 				arrows: true,
 				slidesToScroll: 1,
@@ -600,6 +600,32 @@ $(function () {
 			});
 		}
 
+		// ===========================================================================================
+
+		//Slider Baia Hotel
+		if($('.baia .baia__box__content__image .slider').length) {
+			$('.baia .baia__box__content__image .slider').slick({
+				dots: false,
+				arrows: true,
+				slidesToScroll: 1,
+				slidesToShow: 1,
+				adaptiveHeight: true,
+				// autoplay: true,
+				// autoplaySpeed: 3000,
+				responsive: [
+					{
+						breakpoint: 991,
+						settings: {
+							dots: true,
+							arrows: false,
+							slidesToScroll: 1,
+							slidesToShow: 1,
+						}
+					}
+				]
+			});
+		}
+
 	// =============================================================================================
 
 		//Slider Estrutura Hotel
@@ -629,8 +655,8 @@ $(function () {
 	// =============================================================================================
 
 		// Slick Slider Bedroom
-		if ($('.bedroom .bedroom__slider').length) {
-			$('.bedroom .bedroom__slider').slick({
+		if ($('.eventos .eventos__slider').length) {
+			$('.eventos .eventos__slider').slick({
 				dots: false,
 				arrows: true,
 				slidesToScroll: 1,
@@ -652,8 +678,8 @@ $(function () {
 			});
 		}
 
-		if ($('.bedroom .image-slider').length) {
-			$('.bedroom .image-slider').slick({
+		if ($('.eventos .image-slider').length) {
+			$('.eventos .image-slider').slick({
 				dots: true,
 				arrows: true,
 				slidesToScroll: 1,
@@ -678,10 +704,10 @@ $(function () {
 	// =============================================================================================
 
 		//Slick Slider Bedroom - prev next
-		$('.bedroom__slider .slick-prev, .bedroom__slider .slick-next, .bedroom__slider .slick-slide').on('click', function(){
-			var current = $('.bedroom__slider .slick-current').data('current');
+		$('.eventos__slider .slick-prev, .bedroom__slider .slick-next, .eventos__slider .slick-slide').on('click', function(){
+			var current = $('.eventos__slider .slick-current').data('current');
 
-			$('.bedroom__change__right .qtd_bedroom').text(current);
+			$('.eventos__change__right .qtd_eventos').text(current);
 		});
 
 	// =============================================================================================
@@ -699,10 +725,11 @@ $(function () {
 		$('.about .about__box__content__image .slider .item svg').lightBox();
 		$('.beach .beach__box__content__image .slider .item svg').lightBox();
 		$('.fotos .fotos__box__content__image .slider .item svg').lightBox();
-		$('.details .details__box__content__image .slider .item svg').lightBox();
-		$('.bedroom .bedroom__box__content__image .slider .item svg').lightBox();
+		$('.seguranca .seguranca__box__content__image .slider .item svg').lightBox();
+		$('.eventos .eventos__box__content__image .slider .item svg').lightBox();
 		$('.estrutura .estrutura__box__content__image .slider .item svg').lightBox();
 		$('.banner .banner__box__content__image .slider .item svg').lightBox();
+		$('.baia .banner__box__content__image .slider .item svg').lightBox();
 
 	// =============================================================================================
 

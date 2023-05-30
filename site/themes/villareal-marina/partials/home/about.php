@@ -42,7 +42,7 @@ $about = $ctr_content->getAbout();
             <div class="about-bottom">
                 <div class="about__box__content__image">
                     <div class="slider">
-                        <?php foreach($about->gallery_images as $image): ?>
+                        <?php foreach($about->gallery_images2 as $image): ?>
                             <div class="item" style="background-image: url(<?= $image->imageSrc; ?>);">
                                 <a href="<?= $image->imageSrc; ?>" data-lightbox="image-hotel" title="Ampliar Imagem" rel="lightbox">
                                     <svg>
@@ -54,8 +54,8 @@ $about = $ctr_content->getAbout();
                     </div>
                 </div>
                 <div class="about-bottom-texts">
-                    <h2>Infraestrutura</h2>
-                    <p>Com 23 vagas molhadas para atracação de embarcações de até 100 pés, sendo 14 vagas de 30 a 100 pés em flutuante anexo ao píer e 9 vagas em poitas para até 70 pés, em sistema de locação de diárias ou mensalistas. Além disso, possui segurança monitorada 24 horas, acesso à internet, água potável e energia elétrica, loja de conveniência e bomboniere. O posto de combustível fornecerá diesel marítimo e gasolina, acessível a todos os navegantes da baia Babitonga</p>
+                    <h2><?= $about->title2; ?></h2>
+                    <?= wpautop($about->content2); ?>
                 </div>
             </div>
         </div>

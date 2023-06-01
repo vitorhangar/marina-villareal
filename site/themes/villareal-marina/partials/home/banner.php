@@ -19,7 +19,7 @@ $banner = $ctr_banner->getBanners();
             <div class="slider">
                 <?php foreach($banner->gallery_images as $image): ?>
                     <?php if($image->imageSrc != ''): ?>
-                        <img src="<?= $image->imageSrc; ?>" alt="">
+                        <img src="<?= $image->imageSrc; ?>" alt="banner">
                     <?php endif; ?>
                 <?php endforeach; ?>
             </div>

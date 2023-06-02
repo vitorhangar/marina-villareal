@@ -766,3 +766,14 @@ function handleNotify(type, message){
 		z_index: 9999
 	});
 }
+
+// Popup - Operação
+
+$('.background-popup, .popup__close-btn').click(function() {
+    $('.background-popup').fadeOut(100, function() {
+        $(this).addClass('none');
+    });
+    $('.popup').fadeIn(600, function() {
+        $(this).addClass('none');
+    });
+});

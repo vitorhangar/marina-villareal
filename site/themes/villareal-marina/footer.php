@@ -31,13 +31,11 @@ if( ! defined( 'WPINC' ) ) {
     <script src="<?= theme_url('public/vendors/lightbox.js') ?>">               </script>
     <script src="<?= theme_url('public/js/main.min.js')?>?v=0.3.7">             </script>
     <script src="<?= theme_url('public/vendors/datedropper.pro.min.js'); ?>">   </script>
-
-    <script src="https://hsystem-hbot.s3.amazonaws.com/public/HBOT_CHAT_CLIENT/hbot_chat_web_617082df1661230001fd9426.js"></script>
     
-    <!--AdOpt-->
+    <!--AdOpt -->
         <meta name="adopt-website-id" content="34d96de0-71fc-4e88-943d-32eebd3364b5" />
         <script src="//tag.goadopt.io/injector.js?website_code=34d96de0-71fc-4e88-943d-32eebd3364b5" class="adopt-injector"></script>
-    <!--AdOpt-->
+    <!-- AdOpt-->
 
     <script>
         AOS.init();

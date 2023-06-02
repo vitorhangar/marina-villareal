@@ -24,6 +24,7 @@ get_header(); ?>
         <?php inc('partials/home/lazer'); ?>
         <?php inc('partials/home/eventos'); ?>
         <?php inc('partials/home/fotos'); ?>
+        <?php inc('partials/home/precos'); ?>
         <?php inc('partials/home/popup'); ?>
 
     </main>

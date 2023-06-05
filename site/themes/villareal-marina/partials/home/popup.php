@@ -22,8 +22,5 @@ if( ! defined( 'WPINC' ) ) {
             <img src="<?= theme_url('public/images/svg/popup-key.svg'); ?>" alt="key">
         </div>
         <h3>Estaremos em operação a partir de <span>Julho/2023</span>.</h3>
-        <div>
-            <button>Saiba mais</button>
-        </div>
     </div>
 </div>

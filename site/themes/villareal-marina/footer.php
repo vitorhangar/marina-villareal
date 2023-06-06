@@ -32,9 +32,11 @@ if( ! defined( 'WPINC' ) ) {
     <script src="<?= theme_url('public/js/main.min.js')?>?v=0.3.7">             </script>
     <script src="<?= theme_url('public/vendors/datedropper.pro.min.js'); ?>">   </script>
     
+    <!-- Adopt -->
     <meta name="adopt-website-id" content="fbe22524-6ba2-46d9-bc30-440d5100cc1a" />
     <script src="//tag.goadopt.io/injector.js?website_code=fbe22524-6ba2-46d9-bc30-440d5100cc1a" 
     class="adopt-injector"></script>
+    <!-- Adopt -->
 
     <script>
         AOS.init();

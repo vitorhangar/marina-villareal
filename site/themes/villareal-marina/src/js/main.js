@@ -703,8 +703,8 @@ $(function () {
 
 	// =============================================================================================
 
-		//Slick Slider Bedroom - prev next
-		$('.eventos__slider .slick-prev, .bedroom__slider .slick-next, .eventos__slider .slick-slide').on('click', function(){
+		//Slick Slider Eventos - prev next
+		$('.eventos__slider .slick-prev, .eventos__slider .slick-next, .eventos__slider .slick-slide').on('click', function(){
 			var current = $('.eventos__slider .slick-current').data('current');
 
 			$('.eventos__change__right .qtd_eventos').text(current);

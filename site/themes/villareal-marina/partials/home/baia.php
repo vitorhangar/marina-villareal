@@ -18,7 +18,7 @@ $baia = $ctr_baia->getBaia();
         <div class="baia__box" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-offset="-230" data-aos-duration="500">
             <div class="baia__box__content">
                 <div class="baia__box__content__text">
-                    <h2><?= $baia->title; ?></h2>
+                    <h4><?= $baia->title; ?></h4>
                     <?= wpautop($baia->content); ?>
                 </div>
                 <div class="baia__box__content__image">

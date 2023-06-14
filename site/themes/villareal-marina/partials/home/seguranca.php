@@ -35,7 +35,7 @@ $seguranca = $ctr_seguranca->getSegurancaa();
                     </div>
                     <div class="seguranca__box__content__text">
                         <div>
-                            <h2><?= $seguranca->title; ?></h2>
+                            <h3><?= $seguranca->title; ?></h3>
                             <?= wpautop($seguranca->content); ?>
                         </div>
                     </div>

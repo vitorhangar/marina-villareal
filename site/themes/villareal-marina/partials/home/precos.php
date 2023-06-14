@@ -16,7 +16,7 @@ $precos = $ctr_precos->getPrecos();
 <section class="precos" id="precos">
     <img class="corda" src="<?= theme_url('public/images/corda.png'); ?>" alt="corda">
     <div>
-        <h2><?= $precos->title; ?></h2>
+        <h6><?= $precos->title; ?></h6>
         <?= wpautop($precos->content); ?>
         <a href="<?= theme_url('public/images/PRECOS.pdf'); ?>" download class="button-tariff">Ver Preços</a>
     </div>
